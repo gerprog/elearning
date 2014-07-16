@@ -1,0 +1,151 @@
+<!--<h1>Listing questions</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @questions.each do |question| %>
+  <tr>
+    <td><%= question.title %></td>
+    <td><%= question.description %></td>
+    <td><%= link_to 'Show', question %></td>
+    <td><%= link_to 'Edit', edit_question_path(question) %></td>
+    <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Question', new_question_path %>-->
+
+<!-- above is original from scaffold, replaced with below -->
+
+
+
+<div id="quiz_container" class="container">
+
+ <div class="row-fluid">
+
+
+  <div class="span1">
+  </div><!-- span1 -->
+
+  <div class="span6" style="margin-top:70px;">
+
+     <div class="margin_30 Arial_Rd_Grey_50">Topic: Space</div>
+
+    <row class="stage1" style="padding-right:100px;">Stage 1</row>
+
+   
+    <a href="#" data-toggle="adaptive-modal" 
+    data-title="<h1>Hey Hey</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis hendrerit massa sit amet pretium. Phasellus vel ultrices justo. Quisque eu lectus sodales, rutrum metus eget, aliquam justo. Nullam accumsan sem tristique, viverra massa vitae, mollis sem. Morbi nec porttitor felis. Phasellus eu sem tincidunt, molestie mi a, fermentum lectus. Duis tempus libero mauris, nec rutrum ante pretium egestas. Integer interdum, lectus nec porttitor tincidunt, neque neque malesuada massa, eget tempor nisl ipsum vel metus. In ac iaculis elit. Donec massa leo, posuere eu laoreet et, sollicitudin non sem. Aenean varius sit amet sem interdum cursus. Fusce ornare, leo ut fringilla semper, turpis nisl pharetra libero, id interdum nunc dolor tristique libero. Pellentesque ac arcu felis. Sed facilisis pellentesque nisl vitae mattis.</p>
+
+<p>Maecenas aliquet sem sed dui cursus euismod condimentum a velit. Nullam sed lectus in elit sollicitudin luctus ut eget eros. Morbi ut vulputate urna, et viverra tortor. Phasellus at ullamcorper est. Aenean volutpat pretium porta. In hac habitasse platea dictumst. Duis est dolor, fermentum vel ante eu, ultrices sagittis justo. Praesent molestie vehicula pulvinar. Donec lacus elit, venenatis vel rhoncus vel, fermentum a justo.</p>" 
+
+data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-outline">Content To Read before Questions</button></a>
+
+
+   <div id="question" class="question"></div>
+
+   <div id="answer">
+        <ul id="answer">
+          <li class="number">1.</li> <span class="answer"></span>
+          <br /><br />
+
+          <li class="number">2.</li>  <span class="answer"></span>
+          <br /><br />
+
+          <li class="number">3.</li>  <span class="answer"></span>
+          <br /><br />
+          <li class="number">4.</li>  <span class="answer"></span>
+          <br /><br />      
+        </ul>
+        </div>    
+
+
+       <div id="next_button">
+          <span class="text_yellow_30_bold"> <a href="crazy_creatures_2.html">Next Stage!</a></span>                    
+          </div>
+         <a href="index.html.erb" id="try" class="try"></a>
+
+          <!--<div id="try" class="try"><%= link_to "Try Again", :controller => "questions",  :action => "index" %></div>-->
+  </div><!-- span6 -->
+
+  <div class="span2">
+
+      <div class="row">
+    <div id="countdown"></div>
+    </div>
+
+    <div class="row">
+    <div id="slides">
+        
+
+        <div id="slides_1">
+          <%= image_tag("stage_tick.png") %>
+        </div>
+        <div id="slides_2">
+          <%= image_tag("stage_tick.png") %>
+        </div>
+        <div id="slides_3">
+          <%= image_tag("stage_tick.png") %>
+        </div>  
+        <div id="slides_4">
+          <%= image_tag("stage_tick.png") %>
+        </div>     
+      </div><!-- slides-->
+    </div>
+
+  </div><!-- span2-->
+
+  <div class="row-fluid">
+  <div class="span3">
+    
+
+     <div id="stages_container">
+          <div id="stages">
+            <p class="stage1">Stage 1</p>
+            <p class="stage2">Stage 2</p>
+            <p class="stage3">Stage 3</p>
+            <p class="stage4">Stage 4</p>
+            <p class="stage5">Stage 5</p>
+          </div>
+
+          <!--<div id="stage1_tick" class="stage_tick">
+          </div>
+          <div id="stage2_tick" class="stage_tick_none">
+          </div>
+          <div id="stage3_tick" class="stage_tick_none">
+          </div>
+          <div id="stage4_tick" class="stage_tick_none">
+          </div>
+          <div id="stage5_tick" class="stage_tick_none">
+          </div>-->
+
+          <div class="row">
+            <div id="score_text" class="col-md-6">
+            <span class="Arial_Rd_Pink_34">SCORE</span>
+            </div>
+
+            <div id="score" class="col-md-6">
+              <span class="Arial_Rd_DkGreen_40"></span>
+            </div>
+          </div>
+    </div>
+
+  </div><!-- span3-->
+  </div><!-- row-fluid -->
+
+
+
+
+
+
+</div> <!-- row-fluid -->
+</div> <!-- container -->

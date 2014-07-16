@@ -6,9 +6,49 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+	<!--<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Messages</a></li>
+</ul>-->
+
+
+<div class="row-fluid">
+
+</div><!-- row-fluid emphasize-dark-->
+
+<div class="container main_background">
+ <div class="row-fluid">
+
+      <div class="span12 navbar">
+		 <div class="span1"></div>
+       
+     		 <div id="navbar">
+            	<nav class="navbar-header"> 
+                 <ul class="nav" style="padding-top:20px;">
+                      <li><%= link_to "Quiz1", :controller => "questions",  :action => "index" %></li>
+                      <li><%= link_to "Quiz2", :controller => "questions",  :action => "index" %></li>
+                      <li><%= link_to "Quiz3", :controller => "questions",  :action => "index" %></li>
+                      <li><%= link_to "Quiz4", :controller => "questions",  :action => "index" %></li>
+                 </ul>
+            	</nav><!--navbar-header -->
+      		 </div> <!--navbar-->
+
+ </div><!--span12 navbar -->
+
+	<%= yield %>
+
+
+
+</div> <!-- row-fluid -->
+</div> <!-- container main_background -->
+
+
+
+
 
 </body>
 </html>
