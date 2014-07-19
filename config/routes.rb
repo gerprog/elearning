@@ -2,8 +2,6 @@ Elearning::Application.routes.draw do
 
 
 
-  resources :construct_twos
-
   resources :construct_ones
 
   resources :questions
