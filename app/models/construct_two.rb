@@ -1,3 +1,3 @@
 class ConstructTwo < ActiveRecord::Base
-  attr_accessible :description, :ttitle
+  attr_accessible :description, :title
 end

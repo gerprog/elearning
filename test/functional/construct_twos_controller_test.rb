@@ -18,7 +18,7 @@ class ConstructTwosControllerTest < ActionController::TestCase
 
   test "should create construct_two" do
     assert_difference('ConstructTwo.count') do
-      post :create, construct_two: { description: @construct_two.description, ttitle: @construct_two.ttitle }
+      post :create, construct_two: { description: @construct_two.description, title: @construct_two.title }
     end
 
     assert_redirected_to construct_two_path(assigns(:construct_two))
@@ -35,7 +35,7 @@ class ConstructTwosControllerTest < ActionController::TestCase
   end
 
   test "should update construct_two" do
-    put :update, id: @construct_two, construct_two: { description: @construct_two.description, ttitle: @construct_two.ttitle }
+    put :update, id: @construct_two, construct_two: { description: @construct_two.description, title: @construct_two.title }
     assert_redirected_to construct_two_path(assigns(:construct_two))
   end
 
