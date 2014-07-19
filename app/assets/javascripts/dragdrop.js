@@ -1,7 +1,7 @@
 $(document).on("ready", function(){
 	var score = 0
  
-	$('body').append('<embed src="sounds/PT_66883_lowres.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+	$('body');
   /*function to allow only a specific piece of the puzzle to drop in the required div*/
 	var droppable_option = {
 		activeClass: 'ui-state-hover',
@@ -19,9 +19,9 @@ $(document).on("ready", function(){
 	};
 	
 	/*will revert the piece of the puzzle to it's origin if not placed in the correct position */
-	$( ".bird_heads, .bird_bodies, .bird_feet, .elephant_heads, .elephant_bodies, .elephant_feet, .dog_heads, .dog_bodies, .dog_feet" ).draggable({revert: 'invalid'});
+	$( ".earth, .jupiter, .mars, .venus, .neptune, .mercury, .saturn, .uranus" ).draggable({revert: 'invalid'});
 		
-	$(".bird_heads_slot").droppable($.extend({ accept: '.bird_heads'}, droppable_option));
+	$(".bigrow1").droppable($.extend({ accept: '.mercury_slot'}, droppable_option));
 	$(".bird_bodies_slot").droppable($.extend({ accept: '.bird_bodies'}, droppable_option));
 	$(".bird_feet_slot").droppable($.extend({ accept: '.bird_feet'}, droppable_option));
 
@@ -34,7 +34,7 @@ $(document).on("ready", function(){
 	$(".dog_feet_slot").droppable($.extend({ accept: '.dog_feet'}, droppable_option));
 		
 	var display_score = (function (){ 
-		$(".text_blk_22a").text(800 + score * 100);		
+		$(".text_blk_22a").text(0 + score * 100);		
 	});
 	
 	/*displays bonus round when score reaches 2000*/
