@@ -1,0 +1,24 @@
+#bigrow  {
+  width: 1200px;
+  height: 200px;
+  background-color: #000;
+  float: left;
+}
+
+#dragzone  {
+  width: 668px;
+  height: 400px;
+  background-color: #B0B0B0;
+  float: left;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 266px;
+}
+
+
+#drag_empty1, #drag_empty2, #drag_empty3, #drag_empty4, #drag_empty5, #drag_empty6, #drag_empty7, #drag_empty8,
+#drag_solar1, #drag_solar2, #drag_solar3, #drag_solar4, #drag_solar5, #drag_solar6, #drag_solar7, #drag_solar8 {
+  width: 133;
+  height: 200px;
+  float: left;
+}
