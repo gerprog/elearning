@@ -20,7 +20,7 @@
 
 #drag_empty1, #drag_empty2, #drag_empty3, #drag_empty4, #drag_empty5, #drag_empty6, #drag_empty7, #drag_empty8,
 #drag_solar1, #drag_solar2, #drag_solar3, #drag_solar4, #drag_solar5, #drag_solar6, #drag_solar7, #drag_solar8 {
-  width: 133;
+  width: 133px;
   height: 200px;
   float: left;
 }

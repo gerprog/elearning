@@ -1,0 +1,63 @@
+#number_rows {
+	width: 500px;
+	height: 1000px;
+	background-color: #E0E0E0;
+	border: 4px dashed #B8B8B8;
+	border-radius: 25px;
+	float: left;
+}
+
+#number_row1 {
+	width: 500px;
+	height: 100px;
+
+}
+
+.number_row {
+	width: 70px;
+	height: 100px;
+	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  	font-size: 50px;
+  	text-align: right;
+
+}
+
+.bottom {
+    position: absolute;
+    bottom:0;
+    right: 0;
+}
+
+.row_no_border_small{
+  width: 100px;
+  height: 100px; 
+  text-align: center;
+  float: left;
+
+}
+
+#cities_info {
+	width: 500px;
+	height: 1000px;
+	background-color: #E0E0E0;
+	border: 4px dashed #B8B8B8;
+	border-radius: 25px;
+	float: left;
+	margin-left: 30px;
+
+}
+
+#info {
+	width: 500px;
+	height: 100px;
+	float: left;
+	margin-left: 30px;
+
+}
+
+
+#drag_city1 {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
