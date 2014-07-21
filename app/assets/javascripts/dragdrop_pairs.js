@@ -19,7 +19,7 @@ $(document).on("ready", function(){
 	};
 	
 	/*will revert the piece of the puzzle to it's origin if not placed in the correct position */
-	$( ".tokyo, .tokyo_fact, .canton, .canton_fact, .shanghai, .shanghai_fact, .jakarta, jakarta_fact, .seoul, .seoul_fact, .delhi, .delhi_fact, .mumbai, .mumbai_fact, .newyork, .newyork_fact, .beijing, .beijing_fact, .losangeles, .losangeles_fact, .buenosaires, .buenosaires_fact, .london, .london_fact, .istanbul, .istanbul_fact" ).draggable({revert: 'invalid'});
+	$( ".tokyo, .tokyo_fact, .canton, .canton_fact, .shanghai, .shanghai_fact, .jakarta, .jakarta_fact, .seoul, .seoul_fact, .delhi, .delhi_fact, .mumbai, .mumbai_fact, .newyork, .newyork_fact, .beijing, .beijing_fact, .losangeles, .losangeles_fact, .buenosaires, .buenosaires_fact, .london, .london_fact, .istanbul, .istanbul_fact" ).draggable({revert: 'invalid'});
 		
 	$(".row1a").droppable($.extend({ accept: '.tokyo'}, droppable_option));
 	$(".row1b").droppable($.extend({ accept: '.tokyo_fact'}, droppable_option));
