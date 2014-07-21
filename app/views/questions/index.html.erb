@@ -1,61 +1,39 @@
-<!--<h1>Listing questions</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Description</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @questions.each do |question| %>
-  <tr>
-    <td><%= question.title %></td>
-    <td><%= question.description %></td>
-    <td><%= link_to 'Show', question %></td>
-    <td><%= link_to 'Edit', edit_question_path(question) %></td>
-    <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Question', new_question_path %>-->
-
-<!-- above is original from scaffold, replaced with below -->
-
-
-
 <div id="quiz_container" class="container">
 
  <div class="row-fluid">
 
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#">Geography</a></li>
+            <li><a href="#">Space</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">Grammer</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Physics</a></li>
+          </ul>
 
-  <div class="span1">
-  </div><!-- span1 -->
 
-  <div class="span6" style="margin-top:70px;">
 
-     <div class="margin_30 Arial_Rd_Grey_50">Topic: Space</div>
 
-    <row class="stage1" style="padding-right:100px;">Stage 1</row>
+  <div class="span6" style="margin-top:30px;">
 
-   
+    <p class="Arial_Rd_Red_40 margin-left_20">Solar System</p>
+     <div class="margin_30 Arial_Rd_Grey_25 line_height_150">You can try to answer these 4 questions, <br>or you can
+
     <a href="#" data-toggle="adaptive-modal" 
-    data-title="<h1>Hey Hey</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis hendrerit massa sit amet pretium. Phasellus vel ultrices justo. Quisque eu lectus sodales, rutrum metus eget, aliquam justo. Nullam accumsan sem tristique, viverra massa vitae, mollis sem. Morbi nec porttitor felis. Phasellus eu sem tincidunt, molestie mi a, fermentum lectus. Duis tempus libero mauris, nec rutrum ante pretium egestas. Integer interdum, lectus nec porttitor tincidunt, neque neque malesuada massa, eget tempor nisl ipsum vel metus. In ac iaculis elit. Donec massa leo, posuere eu laoreet et, sollicitudin non sem. Aenean varius sit amet sem interdum cursus. Fusce ornare, leo ut fringilla semper, turpis nisl pharetra libero, id interdum nunc dolor tristique libero. Pellentesque ac arcu felis. Sed facilisis pellentesque nisl vitae mattis.</p>
+    data-title="<h1>Our Solar System</h1><p>Space, in its infinity and mystery has captivated humanity throughout the ages. Today probably more so. We have learned that our Sun is a relatively middleaged star at 4.5 billion years. One of the greatest achievements of the last century was successfully landing a man on the moon in 1969. Many years of research and difficult preparation enabled this to happen. The astronauts had many procedures to learn and ways in which to adapt their familiar routines to suit the confined space of an spacecraft in zero gravity, however they could have 3 packaged meals a day, including fruit and vegetables.
 
-<p>Maecenas aliquet sem sed dui cursus euismod condimentum a velit. Nullam sed lectus in elit sollicitudin luctus ut eget eros. Morbi ut vulputate urna, et viverra tortor. Phasellus at ullamcorper est. Aenean volutpat pretium porta. In hac habitasse platea dictumst. Duis est dolor, fermentum vel ante eu, ultrices sagittis justo. Praesent molestie vehicula pulvinar. Donec lacus elit, venenatis vel rhoncus vel, fermentum a justo.</p>" 
+    <p>Saturn's rings are made mostly of countless small particles of dust, ice and rock. There is still no consensus as to their mechanism of formation, theoretical models suggest they were formed ear in the solar system's history, while some features of the rings suggest a relatively recent origin. </p>" 
 
-data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-outline">Content To Read before Questions</button></a>
+data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-outline">Read Here</button></a>
+ to get the facts
+</div>
 
 
    <div id="question" class="question"></div>
 
    <div id="answer">
-        <ul id="answer">
-          <li class="number">1.</li> <span class="answer"></span>
+        <!--<ul id="answer">
+          <li class="number">word</li> <span class="answer"></span>
           <br /><br />
 
           <li class="number">2.</li>  <span class="answer"></span>
@@ -65,12 +43,33 @@ data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-outline">C
           <br /><br />
           <li class="number">4.</li>  <span class="answer"></span>
           <br /><br />      
-        </ul>
+        </ul>-->
         </div>    
 
 
        <div id="next_button">
-          <span class="text_yellow_30_bold"> <a href="crazy_creatures_2.html">Next Stage!</a></span>                    
+          <!--<span class="Arial_Rd_Grey_25"> <a href="#">More Space info!</a></span> -->
+           <a href="#" data-toggle="adaptive-modal" 
+    data-title="<h1>What Is The Solar System?</h1>
+
+<p>The Solar System is made up of all the planets that orbit our Sun. In addition to planets, the Solar System also consists of moons, comets, asteroids, minor planets, and dust and gas.</p>
+
+<p>Everything in the Solar System orbits or revolves around the Sun. The Sun contains around 98% of all the material in the Solar System. The larger an object is, the more gravity it has. Because the Sun is so large, its powerful gravity attracts all the other objects in the Solar System towards it. At the same time, these objects, which are moving very rapidly, try to fly away from the Sun, outward into the emptiness of outer space. The result of the planets trying to fly away, at the same time that the Sun is trying to pull them inward is that they become trapped half-way in between. Balanced between flying towards the Sun, and escaping into space, they spend eternity orbiting around their parent star.
+How Did The Solar System form?</p>
+
+<p>This is an important question, and one that is difficult for scientists to understand. After all, the creation of our Solar System took place billions of years before there were any people around to witness it. Our own evolution is tied closely to the evolution of the Solar System. Thus, without understanding from where the Solar System came from, it is difficult to comprehend how mankind came to be.</p>
+
+<p>Scientists believe that the Solar System evolved from a giant cloud of dust and gas. They believe that this dust and gas began to collapse under the weight of its own gravity. As it did so, the matter contained within this could begin moving in a giant circle, much like the water in a drain moves around the center of the drain in a circle.</p>
+
+<p>At the center of this spinning cloud, a small star began to form. This star grew larger and larger as it collected more and more of the dust and gas that collapsed into it.</p>
+
+<p>Further away from the center of this mass where the star was forming, there were smaller clumps of dust and gas that were also collapsing. The star in the center eventually ignited forming our Sun, while the smaller clumps became the planets, minor planets, moons, comets, and asteroids.</p>
+A Great Storm
+
+<p>Once ignited, the Sun's powerful solar winds began to blow. These winds, which are made up of atomic particles being blown outward from the Sun, slowly pushed the remaining gas and dust out of the Solar System.</p>" 
+
+data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-danger">More Info!</button></a>
+
           </div>
          <a href="index.html.erb" id="try" class="try"></a>
 
@@ -83,39 +82,40 @@ data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-outline">C
     <div id="countdown"></div>
     </div>
 
-    <div class="row">
+    <!--<div class="row">
     <div id="slides">
         
 
         <div id="slides_1">
-          <%= image_tag("stage_tick.png") %>
+          <%= image_tag("tick.png") %>
         </div>
         <div id="slides_2">
-          <%= image_tag("stage_tick.png") %>
+          <%= image_tag("tick.png") %>
         </div>
         <div id="slides_3">
-          <%= image_tag("stage_tick.png") %>
+          <%= image_tag("tick.png") %>
         </div>  
         <div id="slides_4">
-          <%= image_tag("stage_tick.png") %>
-        </div>     
-      </div><!-- slides-->
-    </div>
+          <%= image_tag("tick.png") %>
+        </div> 
 
-  </div><!-- span2-->
+      </div>
+    </div>-->
+
+  </div>
 
   <div class="row-fluid">
-  <div class="span3">
+  <div class="span4">
     
 
-     <div id="stages_container">
+     <!--<div id="stages_container">
           <div id="stages">
             <p class="stage1">Stage 1</p>
             <p class="stage2">Stage 2</p>
             <p class="stage3">Stage 3</p>
             <p class="stage4">Stage 4</p>
             <p class="stage5">Stage 5</p>
-          </div>
+          </div>-->
 
           <!--<div id="stage1_tick" class="stage_tick">
           </div>
@@ -129,17 +129,38 @@ data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-outline">C
           </div>-->
 
           <div class="row">
-            <div id="score_text" class="col-md-6">
+            <div id="score_text" >
             <span class="Arial_Rd_Pink_34">SCORE</span>
-            </div>
+            </div><!-- score_text-->
 
-            <div id="score" class="col-md-6">
+            <div id="score">
               <span class="Arial_Rd_DkGreen_40"></span>
-            </div>
-          </div>
-    </div>
+            </div> <!-- score-->
+          </div><!-- row-->
 
-  </div><!-- span3-->
+
+
+ <div class="row">
+    <div id="slides">
+
+
+        <div id="slides_1">
+          <%= image_tag("tick.png") %>
+        </div>
+        <div id="slides_2">
+          <%= image_tag("tick.png") %>
+        </div>
+        <div id="slides_3">
+          <%= image_tag("tick.png") %>
+        </div>  
+        <div id="slides_4">
+          <%= image_tag("tick.png") %>
+        </div>     
+      </div><!-- slides-->
+
+    </div><!-- row-->
+
+  </div><!-- span4-->
   </div><!-- row-fluid -->
 
 

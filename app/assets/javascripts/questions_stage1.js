@@ -16,7 +16,7 @@ $('body');
   ];
   /* setting up the variables */
 	var score = 0
-	var slide = ["images/stage_tick.png"]
+	var slide = ["images/tick.png"]
 	/*var sound = ["monkeysound.wav"]*/
 	
 
@@ -50,8 +50,8 @@ $('body');
 			score++;
 		/* and display image and sound */	
 		$('#slides_' + score).slideDown(700);
-		$('body').append('<embed src="sounds/monkeysound.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
-            $('#ticks').fadeIn(4000);
+		$('body').append('<embed src="sounds/shinyding.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+            $('#ticks').fadeIn(500);
 			/* displays next question depending on score if there is a question available */
 			if (questions.length > score) {
 				display_question();

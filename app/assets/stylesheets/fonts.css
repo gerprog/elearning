@@ -28,3 +28,19 @@
   color: #606060;
 }
 
+.Arial_Rd_Grey_25 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 25px;
+  color: #606060;
+}
+
+
+.Arial_Rd_Grey_20 {
+  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+  font-size: 20px;
+  color: #606060;
+}
+
+.line_height_150 {
+line-height:150%;
+}

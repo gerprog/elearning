@@ -72,7 +72,8 @@
   float: left;
 }
 
-#drag_fact1, #drag_fact2,  {
+#drag_fact1, #drag_fact2, #drag_fact3, #drag_fact4, #drag_fact5, #drag_fact6, #drag_fact7, 
+#drag_fact8, #drag_fact9, #drag_fact10, #drag_fact11, #drag_fact12, #drag_fact13,  {
   width: 280px;
   height: 100px;
   float: left;
@@ -102,13 +103,17 @@
   z-index:2;
 }
 
+.margin-left_20{
+	margin-left: 20px;
+}
+
 /*.row1a{
 	width: 150px;
   height: 100px;
 }*/
 
 .number_list{
-	 width: 70px;
+  width: 70px;
   height: 1000px;
   float: left;
 }
@@ -118,3 +123,6 @@
 	margin-bottom: 78px;
 	margin-left: 0px;
 }
+
+
+
