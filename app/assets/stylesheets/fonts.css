@@ -44,3 +44,49 @@
 .line_height_150 {
 line-height:150%;
 }
+
+
+.Lucinda_red_20 {
+font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+ font-size: 20px;
+  color: #CC0066;
+}
+
+.font_nav_bar_quiz{
+ font-family: "Trebuchet MS", Arial, Verdana;
+font-size: 16pt;
+color: #999999;
+}
+
+.font_nav_bar_subj{
+ font-family: "Trebuchet MS", Arial, Verdana;
+font-size: 20pt;
+color: #999999;
+}
+
+.font_planet_para{
+ font-family: "Trebuchet MS", Arial, Verdana;
+font-size: 12pt;
+color: #B8B8B8;
+}
+
+.font_planet_para_bold{
+ font-family: "Trebuchet MS", Arial, Verdana;
+font-size: 12pt;
+color: #888888;
+font-weight: bold;
+}
+
+.font_planet_name{
+ font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+font-size: 16pt;
+color: #0066CC;
+}
+
+.solar_facts{
+ font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+font-size: 24pt;
+color: #CC0099;
+margin-top: 20px;
+margin-left: 20px;
+}

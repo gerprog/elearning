@@ -1,20 +1,21 @@
-<div id="quiz_container" class="container">
+<div id="quiz_container" class="container Q1_background">
 
  <div class="row-fluid">
 
+          <div class="span2"></div>
           <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="#">Geography</a></li>
-            <li><a href="#">Space</a></li>
-            <li><a href="#">Biology</a></li>
-            <li><a href="#">Grammer</a></li>
-            <li><a href="#">Chemistry</a></li>
-            <li><a href="#">Physics</a></li>
+            <li class="active font_nav_bar_subj"><a href="#">Space</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Geography</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Biology</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Grammer</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Chemistry</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Physics</a></li>
           </ul>
 
 
 
 
-  <div class="span6" style="margin-top:30px;">
+  <div class="span6" style="margin-top:30px;padding-bottom:50px;">
 
     <p class="Arial_Rd_Red_40 margin-left_20">Solar System</p>
      <div class="margin_30 Arial_Rd_Grey_25 line_height_150">You can try to answer these 4 questions, <br>or you can
@@ -22,7 +23,7 @@
     <a href="#" data-toggle="adaptive-modal" 
     data-title="<h1>Our Solar System</h1><p>Space, in its infinity and mystery has captivated humanity throughout the ages. Today probably more so. We have learned that our Sun is a relatively middleaged star at 4.5 billion years. One of the greatest achievements of the last century was successfully landing a man on the moon in 1969. Many years of research and difficult preparation enabled this to happen. The astronauts had many procedures to learn and ways in which to adapt their familiar routines to suit the confined space of an spacecraft in zero gravity, however they could have 3 packaged meals a day, including fruit and vegetables.
 
-    <p>Saturn's rings are made mostly of countless small particles of dust, ice and rock. There is still no consensus as to their mechanism of formation, theoretical models suggest they were formed ear in the solar system's history, while some features of the rings suggest a relatively recent origin. </p>" 
+    <p>Saturn's rings are made mostly of countless small particles of dust, ice and rock. There is still no consensus as to their mechanism of formation, theoretical models suggest they were formed ear in the solar system's history, while some features of the rings suggest a relatively recent origin. </p>" data-am-custom-class="modal_margin"
 
 data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-outline">Read Here</button></a>
  to get the facts
@@ -50,7 +51,7 @@ data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-
        <div id="next_button">
           <!--<span class="Arial_Rd_Grey_25"> <a href="#">More Space info!</a></span> -->
            <a href="#" data-toggle="adaptive-modal" 
-    data-title="<h1>What Is The Solar System?</h1>
+    data-title="<h1>What Is The Solar System?</h1> 
 
 <p>The Solar System is made up of all the planets that orbit our Sun. In addition to planets, the Solar System also consists of moons, comets, asteroids, minor planets, and dust and gas.</p>
 
@@ -66,11 +67,14 @@ How Did The Solar System form?</p>
 <p>Further away from the center of this mass where the star was forming, there were smaller clumps of dust and gas that were also collapsing. The star in the center eventually ignited forming our Sun, while the smaller clumps became the planets, minor planets, moons, comets, and asteroids.</p>
 A Great Storm
 
-<p>Once ignited, the Sun's powerful solar winds began to blow. These winds, which are made up of atomic particles being blown outward from the Sun, slowly pushed the remaining gas and dust out of the Solar System.</p>" 
+<p>Once ignited, the Sun's powerful solar winds began to blow. These winds, which are made up of atomic particles being blown outward from the Sun, slowly pushed the remaining gas and dust out of the Solar System.</p>"
 
-data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-danger">More Info!</button></a>
 
-          </div>
+data-am-custom-bgcolor="#FFCCFF"><button type="button" class="btn btn-large btn-danger">More Info!</button></a>
+
+         </div>
+
+
          <a href="index.html.erb" id="try" class="try"></a>
 
           <!--<div id="try" class="try"><%= link_to "Try Again", :controller => "questions",  :action => "index" %></div>-->
@@ -82,54 +86,14 @@ data-am-custom-bgcolor="#66ff66"><button type="button" class="btn btn-large btn-
     <div id="countdown"></div>
     </div>
 
-    <!--<div class="row">
-    <div id="slides">
-        
-
-        <div id="slides_1">
-          <%= image_tag("tick.png") %>
-        </div>
-        <div id="slides_2">
-          <%= image_tag("tick.png") %>
-        </div>
-        <div id="slides_3">
-          <%= image_tag("tick.png") %>
-        </div>  
-        <div id="slides_4">
-          <%= image_tag("tick.png") %>
-        </div> 
-
-      </div>
-    </div>-->
-
   </div>
 
   <div class="row-fluid">
   <div class="span4">
-    
-
-     <!--<div id="stages_container">
-          <div id="stages">
-            <p class="stage1">Stage 1</p>
-            <p class="stage2">Stage 2</p>
-            <p class="stage3">Stage 3</p>
-            <p class="stage4">Stage 4</p>
-            <p class="stage5">Stage 5</p>
-          </div>-->
-
-          <!--<div id="stage1_tick" class="stage_tick">
-          </div>
-          <div id="stage2_tick" class="stage_tick_none">
-          </div>
-          <div id="stage3_tick" class="stage_tick_none">
-          </div>
-          <div id="stage4_tick" class="stage_tick_none">
-          </div>
-          <div id="stage5_tick" class="stage_tick_none">
-          </div>-->
+   
 
           <div class="row">
-            <div id="score_text" >
+            <div id="score_text" style="padding-top:45px;">
             <span class="Arial_Rd_Pink_34">SCORE</span>
             </div><!-- score_text-->
 

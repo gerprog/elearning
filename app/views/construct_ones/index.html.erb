@@ -27,20 +27,17 @@
 <!-- above is original from scaffold, replaced with below -->
 
 
-<div id="quiz_container" class="container">
+<div id="quiz_container" class="container Q2_background">
 
  <div class="row-fluid">
-
-
-     
-
+          <div class="span2"></div>
           <ul class="nav nav-tabs" role="tablist">
-            <li class="active"><a href="#">Space</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Biology</a></li>
-            <li><a href="#">Grammer</a></li>
-            <li><a href="#">Chemistry</a></li>
-            <li><a href="#">Physics</a></li>
+            <li class="active font_nav_bar_subj"><a href="#">Space</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Geography</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Biology</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Grammer</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Chemistry</a></li>
+            <li class="font_nav_bar_subj"><a href="#">Physics</a></li>
           </ul>
 
  <div class="span12" style="margin-top:10px;">
@@ -57,42 +54,74 @@
             <div id="bigrow7" class="bigrow7 bigrow_no_border"></div>
             <div id="bigrow8" class="bigrow8 bigrow_no_border"></div>
 
+           </div>
 
+           <div clas="row">
+           <div id="textzone" class="span4"><p class="solar_facts">Solar System Facts</p>
 
+            <div id="earth_text" class="section">
+              <p class="font_planet_name">Earth</p>
+              <p class="font_planet_para">Unlike the other planets in the solar system that are named after classic deities the Earth’s name comes from the Anglo-Saxon word erda which means ground or soil. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.</p>
+                <p class="font_planet_name">Planet Profile</p>
 
+                <p class="font_planet_para">
+                <span class="font_planet_para_bold">Mass:</span> 5,972,190,000,000,000 billion kg
+                <span class="font_planet_para_bold">Equatorial Diameter:</span> 12,756 km
+                <span class="font_planet_para_bold">Polar Diameter:</span> 12,714 km
+                <span class="font_planet_para_bold">Equatorial Circumference:</span> 40,030 km
+                <span class="font_planet_para_bold">Known Satellites:</span> 1
+                <span class="font_planet_para_bold">Notable Satellites:</span> The Moon
+                <span class="font_planet_para_bold">Orbit Distance:</span> 149,598,262 km (1 AU)
+                <span class="font_planet_para_bold">Orbit Period:</span> 365.26 Earth days
+                <span class="font_planet_para_bold">Surface Temperature:</span> -88 to 58°C</p>
+            </div> <!-- earth_text-->
+
+             <div id="venus_text" class="section">
+              <p class="font_planet_name">Venus</p>
+              <p class="font_planet_para">Venus is the second brightest object in the night sky after the Moon. Named after the Roman goddess of love and beauty, Venus is the second largest terrestrial planet and is sometimes referred to as the Earth’s sister planet due the their similar size and mass. The surface of the planet is obscured by an opaque layer of clouds made up of sulfuric acid.</p>
+                <p class="font_planet_name">Planet Profile</p>
+
+                <p class="font_planet_para">
+                <span class="font_planet_para_bold">Mass:</span>4,867,320,000,000,000 billion kg (0.815 x Earth)
+                <span class="font_planet_para_bold">Equatorial Diameter:</span> 12,104 km
+                <span class="font_planet_para_bold">Polar Diameter:</span>12,104 km
+                <span class="font_planet_para_bold">Equatorial Circumference:</span> 38,025 km
+                <span class="font_planet_para_bold">Known Satellites: </span>none
+                <span class="font_planet_para_bold">Notable Satellites:</span> none
+                <span class="font_planet_para_bold">Orbit Distance: </span>108,209,475 km (0.73 AU)
+                <span class="font_planet_para_bold">Orbit Period:</span> 224.70 Earth days
+                <span class="font_planet_para_bold">Surface Temperature:</span> 462 °C
+                <span class="font_planet_para_bold">First Record: </span>17th century BC
+                <span class="font_planet_para_bold">Recorded By:</span> Babylonian astronomers</p>
+            </div> <!-- venus_text-->
 
            </div>
 
-         
-
-               <div id="dragzone">
+               <div id="dragzone" class="span7">
                   <div id="drag_empty1"></div> 
-                   <div id="drag_solar1" class="earth"> <%= image_tag("earth.png") %></div> 
+
+                  <div id="drag_solar1" class="earth"> 
+                  <a href="#" onclick="toggle_visibility('earth_text');"><%= image_tag("earth.png") %></a></div> 
                   <div id="drag_empty2"></div> 
-                 
-                  <div id="drag_empty3"></div> 
-                  <div id="drag_solar2" class="venus"> <%= image_tag("venus.png") %></div> 
-                  <div id="drag_solar3" class="mercury"> <%= image_tag("mercury.png") %></div> 
-                  <div id="drag_empty4"></div> 
-                  <div id="drag_solar4" class="mars"> <%= image_tag("mars.png") %></div> 
-                  <div id="drag_empty5"></div> 
+
+                  <div id="drag_solar2" class="venus"> 
+                  <a href="#" onclick="toggle_visibility('venus_text');"> <%= image_tag("venus.png") %></a></div> 
+
                   <div id="drag_solar5" class="jupiter"> <%= image_tag("jupiter.png") %></div> 
+                  <div id="drag_solar4" class="mars"> <%= image_tag("mars.png") %></div> 
+                  
+                  <div id="drag_solar3" class="mercury"> <%= image_tag("mercury.png") %></div> 
                   <div id="drag_solar6" class="neptune"> <%= image_tag("neptune.png") %></div> 
-                   <div id="drag_solar7" class="saturn"> <%= image_tag("saturn.png") %></div> 
-                    <div id="drag_empty6"></div> 
-                     <div id="drag_empty7"></div> 
-                       <div id="drag_solar8" class="uranus"> <%= image_tag("uranus.png") %></div> 
-                          <div id="drag_empty8"></div> 
+                  <div id="drag_solar7" class="saturn"> <%= image_tag("saturn.png") %></div> 
+                  <div id="drag_empty6"></div> 
+                  <div id="drag_empty7"></div> 
+                  <div id="drag_solar8" class="uranus"> <%= image_tag("uranus.png") %></div> 
+                  <div id="drag_empty8"></div> 
 
                </div>
+                </div>
 
-           
-
-
-
-
-
-             </div><!-- span12-->
+  </div><!-- span12-->
 
 
 </div> <!-- row-fluid -->

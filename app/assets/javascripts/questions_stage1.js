@@ -4,14 +4,14 @@ $(document).on("ready", function(){
 $('body');
   var questions = [
   /* JSON list of questions and answers */
-	{"text": "What are Saturn's rings mostly made of?", "answers": ["Ice, dust and rock", "Icecream, old moons, biscuits", 
+	{"text": "Q.1. What are Saturn's rings mostly made of?", "answers": ["Ice, dust and rock", "Icecream, old moons, biscuits", 
 	"Dust", "Debris"], "correct": "Ice, dust and rock" },
 
-	{"text": "How old is the sun?", "answers": ["40 Billion years old", "4.5 Billion years old", "10 Billion years old", "No one knows"], "correct": "4.5 Billion years old" },
+	{"text": "Q.2. How old is the sun?", "answers": ["40 Billion years old", "4.5 Billion years old", "10 Billion years old", "No one knows"], "correct": "4.5 Billion years old" },
 
-	{"text": "When did humans first land on the moon?", "answers": ["We haven't yet", "1969", "1968", "1972"], "correct": "1969" },
+	{"text": "Q.3. When did humans first land on the moon?", "answers": ["We haven't yet", "1969", "1968", "1972"], "correct": "1969" },
 
-	{"text": "Can Astronauts only eat space food from a tube?", "answers": ["Yes, because it is cleanest", "Yes, because it is safer", 
+	{"text": "Q.4. Can Astronauts only eat space food from a tube?", "answers": ["Yes, because it is cleanest", "Yes, because it is safer", 
 	"No, they eat 3 packaged meals a day, fruit and vegetables", "No, they rely on timed drip feeds"], "correct": "No, they eat 3 packaged meals a day, fruit and vegetables" },
   ];
   /* setting up the variables */
@@ -58,7 +58,7 @@ $('body');
 				countdown = max_countdown;
 			} else {
 			/* if there are no questions left, provide a link to progress */
-				$("#question").text("Well Done! You have completed an Objectivist Quiz");
+				$("#question").text("Well Done! You have completed the Solar System Quiz");
 				$('#next_button').effect("shake", { times:2 }, 2000);
 				/* use some effects */
 				$('#slides').effect("bounce", { times:3 }, 2000);

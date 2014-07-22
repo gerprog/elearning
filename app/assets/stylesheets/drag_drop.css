@@ -8,19 +8,38 @@
 }
 
 #dragzone  {
-  width: 668px;
+  /*width: 668px;*/
   height: 400px;
   background-color: #6699FF;
   float: left;
   border-radius: 25px;
   border: 4px solid #FFCC00;
   margin-top: 30px;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
+  margin-bottom: 50px;
 }
 
-#drag_empty1, #drag_empty2, #drag_empty3, #drag_empty4, #drag_empty5, #drag_empty6, #drag_empty7, #drag_empty8,
+#textzone  {
+  /*width: 668px;*/
+  height: 400px;
+  background-color: #FFFFFF;
+  float: left;
+  border-radius: 25px;
+  border: 4px solid #FF6699;
+  margin-top: 30px;
+  /*margin-left: 200px;*/
+  margin-bottom: 50px;
+}
+
+
 #drag_solar1, #drag_solar2, #drag_solar3, #drag_solar4, #drag_solar5, #drag_solar6, #drag_solar7, #drag_solar8 {
   width: 133px;
+  height: 200px;
+  float: left;
+}
+
+#drag_empty1, #drag_empty2, #drag_empty3, #drag_empty4, #drag_empty5, #drag_empty6, #drag_empty7, #drag_empty8{
+  width: 50px;
   height: 200px;
   float: left;
 }
@@ -32,3 +51,26 @@
   float: left;
 
 }
+
+#earth_text{
+  /*width: 133px;
+  height: 200px;
+  background-color: #FF6699;*/
+  float: left;
+  display:none;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+#venus_text{
+  float: left;
+  display:none;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+  .section {
+        display: none;
+    }
