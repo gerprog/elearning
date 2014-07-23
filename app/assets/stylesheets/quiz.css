@@ -10,6 +10,10 @@
   background: #99CCFF;
 }
 
+.green_background {
+  background: #99FFCC;
+}
+
 #countdown {
   width: 100px;
   height: 35px;

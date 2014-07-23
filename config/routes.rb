@@ -2,6 +2,10 @@ Elearning::Application.routes.draw do
 
 
 
+  get "quiz2/geography_2"
+
+  get "geography_quiz2/geography_2"
+
   resources :construct_twos
 
   resources :construct_ones
@@ -11,6 +15,15 @@ Elearning::Application.routes.draw do
   resources :quiz1s
   get "questions/index"
   post "questions/index"
+
+  # get "construct_ones/index"
+  #post "construct_ones/index"
+
+    match '/index' => 'construct_ones#index'
+
+  match '/geography_2' => 'quiz2#geography_2'
+  match '/biology_2' => 'quiz2#biology_2'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

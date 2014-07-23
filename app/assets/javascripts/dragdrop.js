@@ -26,11 +26,11 @@ $(document).on("ready", function(){
 	$(".bigrow3").droppable($.extend({ accept: '.earth'}, droppable_option));
 
 	$(".bigrow4").droppable($.extend({ accept: '.mars'}, droppable_option));
-	$(".bigrow5").droppable($.extend({ accept: '.saturn'}, droppable_option));
-	$(".bigrow6").droppable($.extend({ accept: '.jupiter'}, droppable_option));
+	$(".bigrow5").droppable($.extend({ accept: '.jupiter'}, droppable_option));
+	$(".bigrow6").droppable($.extend({ accept: '.saturn'}, droppable_option));
 
-	$(".bigrow7").droppable($.extend({ accept: '.neptune'}, droppable_option));
-	$(".bigrow8").droppable($.extend({ accept: '.uranus'}, droppable_option));
+	$(".bigrow7").droppable($.extend({ accept: '.uranus'}, droppable_option));
+	$(".bigrow8").droppable($.extend({ accept: '.neptune'}, droppable_option));
 		
 	var display_score = (function (){ 
 		$(".text_blk_22a").text(0 + score * 100);		
