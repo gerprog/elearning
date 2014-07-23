@@ -21,16 +21,16 @@ $(document).on("ready", function(){
 	/*will revert the piece of the puzzle to it's origin if not placed in the correct position */
 	$( ".france, .america, .china, .spain, .italy, .uk, .turkey, .germany" ).draggable({revert: 'invalid'});
 		
-	$(".bigrow1").droppable($.extend({ accept: '.france'}, droppable_option));
-	$(".bigrow2").droppable($.extend({ accept: '.america'}, droppable_option));
-	$(".bigrow3").droppable($.extend({ accept: '.china'}, droppable_option));
+	$(".bigrow1_geo").droppable($.extend({ accept: '.france'}, droppable_option));
+	$(".bigrow2_geo").droppable($.extend({ accept: '.america'}, droppable_option));
+	$(".bigrow3_geo").droppable($.extend({ accept: '.china'}, droppable_option));
 
-	$(".bigrow4").droppable($.extend({ accept: '.spain'}, droppable_option));
-	$(".bigrow5").droppable($.extend({ accept: '.italy'}, droppable_option));
-	$(".bigrow6").droppable($.extend({ accept: '.uk'}, droppable_option));
+	$(".bigrow4_geo").droppable($.extend({ accept: '.spain'}, droppable_option));
+	$(".bigrow5_geo").droppable($.extend({ accept: '.italy'}, droppable_option));
+	$(".bigrow6_geo").droppable($.extend({ accept: '.uk'}, droppable_option));
 
-	$(".bigrow7").droppable($.extend({ accept: '.turkey'}, droppable_option));
-	$(".bigrow8").droppable($.extend({ accept: '.germany'}, droppable_option));
+	$(".bigrow7_geo").droppable($.extend({ accept: '.turkey'}, droppable_option));
+	$(".bigrow8_geo").droppable($.extend({ accept: '.germany'}, droppable_option));
 		
 	var display_score = (function (){ 
 		$(".text_blk_22a").text(0 + score * 100);		

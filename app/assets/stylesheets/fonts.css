@@ -64,7 +64,7 @@ font-size: 20pt;
 color: #999999;
 }
 
-.font_planet_para, .font_country_para {
+.font_planet_para, .font_country_para, .font_species_para{
  font-family: "Trebuchet MS", Arial, Verdana;
 font-size: 12pt;
 color: #B8B8B8;
@@ -77,13 +77,13 @@ color: #888888;
 font-weight: bold;
 }
 
-.font_planet_name, .font_country_name {
+.font_planet_name, .font_country_name, .font_species_name {
  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 font-size: 16pt;
 color: #0066CC;
 }
 
-.solar_facts, .country_facts{
+.solar_facts, .country_facts, .species_facts{
  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
 font-size: 18pt;
 color: #CC0099;
