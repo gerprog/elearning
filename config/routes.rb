@@ -24,6 +24,8 @@ Elearning::Application.routes.draw do
   match '/geography_2' => 'quiz2#geography_2'
   match '/biology_2' => 'quiz2#biology_2'
 
+  match '/biology_3' => 'quiz3#biology_3'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

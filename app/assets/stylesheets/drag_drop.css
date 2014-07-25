@@ -5,7 +5,7 @@
   float: left;
   border-radius: 25px;
    border: 4px solid #6600FF;
-     background-image: url(sun.png);
+     background-image: url(space_distance.png);
 }
 
 #bigrow_countries  {
@@ -94,6 +94,25 @@
   margin-bottom: 50px;
 }
 
+
+#welldone_species  {
+  /*width: 668px;*/
+  height: 320px;
+  background-color: #FFF;
+  float: left;
+  border-radius: 25px;
+  /*border: 4px solid #FF6699;*/
+  margin-top: 40px;
+   margin-left: 30px;
+  /*background-image: url(textzone_species.png);*/
+
+  /*float: left;*/
+   z-index: 11;
+  position: absolute;
+display: none;
+
+
+}
 
 
 #drag_solar1, #drag_solar2, #drag_solar3, #drag_solar4, #drag_solar5, #drag_solar6, #drag_solar7, #drag_solar8,
